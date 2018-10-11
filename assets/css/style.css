@@ -1,0 +1,169 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+#container {
+    height: 90%;
+    width: 90%;
+    margin-left: 5%;
+    position: relative;
+    border: 4px solid red;
+    overflow: hidden;
+    background-image: url(../images/farm.png);
+    background-repeat: none;
+    background-size: cover;
+    margin-top: 20px;
+}
+
+#score_help {
+    text-align: center;
+    font-size: 25px;
+    background-color: #eaeaea;
+}
+
+#branch {
+    position: absolute;
+    height: 2%;
+    width: 100%;
+    background-color: #7b2e00;
+    top: 23%;
+}
+
+.hen {
+    position: absolute;
+    height: 15%;
+    width: 8%;
+    top: 10%;
+    background: url('../images/hen-right.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 100;
+}
+
+#hen1 {
+    left: 15%;
+}
+
+#hen2 {
+    left: 30%;
+}
+
+#hen3 {
+    left: 45%;
+}
+#hen4 {
+    left: 60%;
+}
+
+.egg {
+    position: absolute;
+    top: 18%;
+    height: 5%;
+    width: 2%;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: 99;
+}
+
+#egg1 {
+    left: calc(15% + 8%/2 - 2%/2);
+}
+
+#egg2 {
+    left: calc(30% + 8%/2 - 2%/2);
+}
+
+#egg3 {
+    left: calc(45% + 8%/2 - 2%/2);
+}
+#egg4 {
+    left: calc(60% + 8%/2 - 2%/2);
+}
+
+.bullseye {
+    display: none;
+    position: absolute;
+    bottom: 0px;
+    height: 7%;
+    width: 7%;
+    background: url('../images/bullseye1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 11;
+}
+
+#bullseye1 {
+    left: calc(15% + 8%/2 - 7%/2);
+}
+
+#bullseye2 {
+    left: calc(30% + 8%/2 - 7%/2);
+}
+
+#bullseye3 {
+    left: calc(45% + 8%/2 - 7%/2);
+}
+#bullseye4 {
+    left: calc(60% + 8%/2 - 7%/2);
+}
+
+#floor {
+    position: absolute;
+    height: 7%;
+    width: 100%;
+    background-color: #5F4842;
+    bottom: 0;
+    z-index: 10;
+}
+
+#basket {
+    height: 100px;
+    width: 85px;
+    position: absolute;
+    bottom: 5px;
+    background: url('../images/basket.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    z-index: 11;
+}
+
+#score_1 {
+    position: absolute;
+    color: #02010A;
+    font-size: 50px;
+    top: 45%;
+    left: 30%;
+}
+
+#restart {
+    border: 0;
+    position: absolute;
+    background-image: url('../images/end.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90%;
+    width: 100%;
+    color: black;
+    font-weight: bolder;
+    top: 5%;
+    font-size: 35px;
+    display: none;
+    cursor: pointer;
+}
+
+footer
+{
+    background-color: skyblue;
+    height: 40px;
+    margin-top: 10px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+
+}
